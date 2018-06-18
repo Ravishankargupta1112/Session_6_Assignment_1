@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JS</title>
+</head>
+<body>
+	<h1>Employee Salary Calculations</h1>
+
+	<script>
+		var basic_salary=Number(prompt("enter the basic_salary"));
+		var working_hours=Number(prompt("enter your daily working hours"));
+		var total_basic_salary=0;
+		if(basic_salary>=15000 && working_hours > 10){
+			var bonus=basic_salary*0.1;
+			total_basic_salary=bonus + basic_salary;
+			alert("The basic_salary with added bonus is " +total_basic_salary);
+		}
+		else{
+			bonus=basic_salary*0.05;
+			total_basic_salary=bonus + basic_salary;
+			alert("The basic_salary with added bonus is " +total_basic_salary);
+		}
+		console.log("The basic_salary with added bonus is " +total_basic_salary);
+	</script>
+</body>
+</html>
